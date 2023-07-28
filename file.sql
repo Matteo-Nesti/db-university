@@ -15,9 +15,15 @@ SELECT * FROM `students` WHERE (2023 - YEAR(`date_of_birth`)) > 30;
 SELECT * FROM `courses` WHERE `period` LIKE 'I %' AND `year` = 1;
 
 -- 5. Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020 (21)
+
+SELECT * FROM `exams` WHERE DATE(`date`) = '2020-06-20' AND TIME(`hour`) > '14:00';
+
 -- 6. Selezionare tutti i corsi di laurea magistrale (38)
 -- 7. Da quanti dipartimenti è composta l'università? (12)
 -- 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
+
+
+
 
 -- 1. Contare quanti iscritti ci sono stati ogni anno
 -- 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
