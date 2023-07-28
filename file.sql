@@ -44,3 +44,5 @@ SELECT COUNT(*) AS `Numero di insegnanti per ufficio`, `office_address` AS `Indi
 SELECT `student_id` AS `ID Studente`, ROUND(AVG(`vote`)) AS `Media` FROM `exam_student` GROUP BY `ID Studente`;
 
 -- 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+
+SELECT COUNT(*) AS `Corsi Totali`, `department_id` AS `Dipartimento` FROM `degrees` GROUP BY `department_id`;
