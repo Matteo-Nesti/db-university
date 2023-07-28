@@ -28,7 +28,7 @@ SELECT COUNT(*) AS `dipartimenti` FROM `departments`;
 
 -- 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
-
+SELECT * FROM `teachers` WHERE `phone` IS NULL;
 
 
 -- 1. Contare quanti iscritti ci sono stati ogni anno
